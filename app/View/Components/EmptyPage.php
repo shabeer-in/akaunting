@@ -81,8 +81,8 @@ class EmptyPage extends Component
      */
     public function __construct(
         string $alias = '', string $group = '', string $page = '',
-        string $title = '', string $createButtonTitle = '', string $importButtonTitle = '', 
-        string $description = '', string $docsCategory = 'accounting', string $image = '', 
+        string $title = '', string $createButtonTitle = '', string $importButtonTitle = '',
+        string $description = '', string $docsCategory = 'accounting', string $image = '',
         string $imageEmptyPage = '', bool $checkPermissionCreate = true, string $permissionCreate = '',
         array $buttons = [], bool $hideButtonCreate = false, bool $hideButtonImport = false,
         bool $hideDocsDescription = false, string $importRoute = '', array $importRouteParameters = []
@@ -215,13 +215,13 @@ class EmptyPage extends Component
             return asset($this->imageEmptyPage);
         }
 
-        $path = 'public/img/empty_pages/' . $page . '.png';
+        $path = 'img/empty_pages/' . $page . '.png';
 
         if ($this->alias != 'core') {
             $path = 'modules/' . Str::studly($this->alias) . '/Resources/assets/img/empty-' . $page . '.png';
 
             if (! file_exists($path)) {
-                $path = 'public/img/empty_pages/default.png';
+                $path = 'img/empty_pages/default.png';
             }
         }
 
