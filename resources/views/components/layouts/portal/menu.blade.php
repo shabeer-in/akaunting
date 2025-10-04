@@ -6,7 +6,7 @@
     <span class="material-icons text-black js-hamburger-menu">menu</span>
 
     <div class="flex items-center m-auto">
-        <img src="{{ asset('public/img/akaunting-logo-green.svg') }}" class="w-8 m-auto" alt="Akaunting" />
+        <img src="{{ asset('img/akaunting-logo-green.svg') }}" class="w-8 m-auto" alt="Akaunting" />
         <span class="ltr:ml-2 rtl:mr-2">{{ Str::limit(setting('company.name'), 22) }}</span>
     </div>
 </div>
@@ -25,7 +25,7 @@
     class="w-70 h-screen flex hidden fixed top-0 js-menu z-20 xl:z-10 transition-all ltr:-left-80 rtl:-right-80 xl:ltr:left-0 xl:rtl:right-0"
 >
     <div class="w-14 py-7 px-1 bg-lilac-900 z-10 menu-scroll overflow-y-auto overflow-x-hidden">
-        <div 
+        <div
             data-tooltip-target="tooltip-profile"
             data-tooltip-placement="right"
             class="flex flex-col items-center justify-center mb-5 cursor-pointer menu-button"
@@ -91,7 +91,7 @@
         <div class="relative mb-5 cursor-pointer">
             <button type="button" class="flex items-center" data-dropdown-toggle="dropdown-menu-company">
                 <div class="w-8 h-8 flex items-center justify-center">
-                    <img src="{{ asset('public/img/akaunting-logo-green.svg') }}" class="w-6 h-6" alt="Akaunting" />
+                    <img src="{{ asset('img/akaunting-logo-green.svg') }}" class="w-6 h-6" alt="Akaunting" />
                 </div>
 
                 <div class="flex ltr:ml-2 rtl:mr-2">

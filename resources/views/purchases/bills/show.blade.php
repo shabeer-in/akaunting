@@ -33,12 +33,12 @@
             hide-share
             hide-accept-payment
             hide-schedule
-            hide-children 
+            hide-children
         />
     </x-slot>
 
     @push('stylesheet')
-        <link rel="stylesheet" href="{{ asset('public/css/print.css?v=' . version('short')) }}" type="text/css">
+        <link rel="stylesheet" href="{{ asset('css/print.css?v=' . version('short')) }}" type="text/css">
     @endpush
 
     <x-documents.script type="bill" :document="$bill" />

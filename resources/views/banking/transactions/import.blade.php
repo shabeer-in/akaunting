@@ -88,10 +88,10 @@
             <x-form id="import" :route="$form_params['route']" :url="$form_params['url']">
                 <div class="flex flex-col lg:flex-row">
                     <div class="hidden lg:flex w-4/12 ltr:-ml-10 rtl:-mr-10 ltr:mr-10 rtl:ml-10">
-                        <img src="{{ asset('public/img/import.png') }}" alt="{{ trans('import.title', ['type' => $title_type]) }}">
+                        <img src="{{ asset('img/import.png') }}" alt="{{ trans('import.title', ['type' => $title_type]) }}">
                     </div>
 
-                    <!-- 
+                    <!--
                     <div class="hidden lg:flex w-4/12 mt-18 mr-14">
                         <iframe width="560" height="244" src="https://www.youtube.com/embed/p98z142g2yY" frameborder="0"  title="{{ trans('import.title', ['type' => $title_type]) }}" class="rounded-lg"></iframe>
                     </div>
@@ -151,4 +151,3 @@
 
     <x-script folder="common" file="imports" />
 </x-layouts.admin>
-
